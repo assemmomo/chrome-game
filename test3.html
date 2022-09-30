@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" onmousewheel="jumpup();" onkeydown="jump();" onmousedown="down()">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <link rel="stylesheet" href="test3.css">
+</head>
+<body>
+      <div id="main">
+            <div id="hero"></div>
+            <div id="ghost"></div>
+            <div id="ghost2"></div>
+            <div id="score">score : <p id="scorecount">0</p></div>
+            <div onclick="settings();" id="settingsimg"><img src="settings_FILL0_wght400_GRAD0_opsz48.png"></div>
+      </div>
+      
+      <div id="nameqs">
+            <p>what is youer name?</p>
+            <div onclick="settings();" id="settingsimg3"><img src="settings_FILL0_wght400_GRAD0_opsz48.png"></div>
+            <input id="input" type="text" placeholder="name">
+            <div onclick="ok();" id="ok">ok</div>
+      </div>
+      <h1 id="name">user name<p id="name1"></p></h1>
+      <div id="gameover">
+            <h1>GameOver</h1>
+            <div onclick="settings();" id="settingsimg2"><img src="settings_FILL0_wght400_GRAD0_opsz48.png"></div>
+            <p id="scorelose">0</p>
+            <div onclick="agine();" id="agine">One More</div>
+      </div>
+      <div id="runs">
+            <p id="p1">Click : (space) to jump</p>
+            <p id="p2">Click : (mouse) to go down</p>
+            <p id="p3">Click : (scroll) to super jump</p>
+            <p id="p4">One click = 1 Score</p>
+      </div>
+      <div id="settingspage">
+            <p id="settingsp">Settings</p>
+            <div id="navsettings">
+                  <div onclick="herocolor1();" id="herocolor">Player color</div>
+                  <div onclick="speed();" id="speed">Speed game</div>
+                  <div id="done">Done</div>
+            </div>
+            <div onclick="style1();" id="style1"><div id="style1img"></div></div>
+            <div onclick="style2();" id="style2"><div id="style2img"></div></div>
+            <div onclick="style3();" id="style3"><div id="style3img"></div></div>
+            <div onclick="normal();" id="speed1">Normal</div>
+            <div onclick="fast();" id="speed2">Fast</div>
+            <div onclick="veryfast();" id="speed3">Very fast</div>
+      </div>
+      <div onclick="closesettings();" id="x">X</div>
+      <script src="test3.js"></script>
+</body>
+</html>
