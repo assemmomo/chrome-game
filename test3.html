@@ -6,41 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>game</title>
     <link rel="stylesheet" href="test3.css">
+    <link rel="icon"  href="Desktop a.png">
 </head>
-<body>
+<body onload="music1();">
       <div id="main">
+            <img id="mainimgg" src="wallpaperflare.com_wallpaper.jpg">
             <div id="hero"></div>
             <div id="ghost"></div>
             <div id="ghost2"></div>
+            <div id="point1"></div>
+            <div id="point2"></div>
             <div id="score">score : <p id="scorecount">0</p></div>
+            <div id="pointcounter">points : <p id="pointnumber">0</p></div>
             <div onclick="settings();" id="settingsimg"><img src="settings_FILL0_wght400_GRAD0_opsz48.png"></div>
+            <div id="air1"></div>
+            <div id="air2"></div>
+            <div id="air3"></div>
+            <div id="air4"></div>
+            <div id="air5"></div>
+            <div id="air6"></div>
+            <div id="air7"></div>
+            <div id="air8"></div>
       </div>
       
       <div id="nameqs">
             <p>what is youer name?</p>
             <div onclick="settings();" id="settingsimg3"><img src="settings_FILL0_wght400_GRAD0_opsz48.png"></div>
-            <input id="input" type="text" placeholder="name">
-            <div onclick="ok();" id="ok">ok</div>
+            <input id="input" type="text" placeholder="Name">
+            <h1 id="noname">please write your user name</h1>
+            <div onclick="okkk();" id="ok">ok</div>
       </div>
       <h1 id="name">user name<p id="name1"></p></h1>
       <div id="gameover">
             <h1>GameOver</h1>
             <div onclick="settings();" id="settingsimg2"><img src="settings_FILL0_wght400_GRAD0_opsz48.png"></div>
             <p id="scorelose">0</p>
+            <p id="pointlose">0</p>
+            <p id="scorepointp">score</p>
             <div onclick="agine();" id="agine">One More</div>
-      </div>
-      <div id="runs">
-            <p id="p1">Click : (space) to jump</p>
-            <p id="p2">Click : (mouse) to go down</p>
-            <p id="p3">Click : (scroll) to super jump</p>
-            <p id="p4">One click = 1 Score</p>
       </div>
       <div id="settingspage">
             <p id="settingsp">Settings</p>
             <div id="navsettings">
                   <div onclick="herocolor1();" id="herocolor">Player color</div>
                   <div onclick="speed();" id="speed">Speed game</div>
-                  <div id="done">Done</div>
+                  <div onclick="done();" id="done">Done</div>
+                  <div onclick="showcontrols();" id="showcontrols">Show controls</div>
             </div>
             <div onclick="style1();" id="style1"><div id="style1img"></div></div>
             <div onclick="style2();" id="style2"><div id="style2img"></div></div>
@@ -48,8 +59,21 @@
             <div onclick="normal();" id="speed1">Normal</div>
             <div onclick="fast();" id="speed2">Fast</div>
             <div onclick="veryfast();" id="speed3">Very fast</div>
+            <div id="runs">
+                  <p id="p1">Click : (space) to jump</p>
+                  <p id="p2">Click : (mouse) to go down</p>
+                  <p id="p3">Click : (scroll) to super jump</p>
+                  <p id="p4">One click = 1 Score</p>
+            </div>
       </div>
       <div onclick="closesettings();" id="x">X</div>
+      <div ondblclick="closeinfo();" onclick="showinfoimgg();" id="showinfoimg"><img src="chevron_right_FILL0_wght400_GRAD0_opsz48.png"></div>
+      <div onclick="closeinfo();" id="showinfoimg2"><img src="chevron_right_FILL0_wght400_GRAD0_opsz48.png"></div>
+      <div id="showinfo">
+            <p id="createdby">Created By : Assem mohamed</p>
+            <a href="#"></a>
+      </div>
       <script src="test3.js"></script>
 </body>
 </html>
+
